@@ -2,7 +2,7 @@
 随時追加します
 
 ## 不知火
-[](https://github.com/gologius/gologius.github.io/blob/master/images/siranui_0.png)
+<img src="https://github.com/gologius/gologius.github.io/blob/master/images/siranui_0.png" width="400px">
 
 ## Test
-[](https://github.com/gologius/gologius.github.io/blob/master/images/test.gif)
+<img src="https://github.com/gologius/gologius.github.io/blob/master/images/test.gif" width="400px">
