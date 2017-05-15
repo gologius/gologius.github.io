@@ -5,9 +5,10 @@
 
 をしています．
 
-## リンク
+# リンク
 * GitHub (gologius) [https://github.com/gologius](https://github.com/gologius)
-* Twitter (gologius) [https://twitter.com/gologius](https://twitter.com/gologius)
+* Twitter (＠gologius) [https://twitter.com/gologius](https://twitter.com/gologius)
+* ブログ (gologiusの巣) [http://gologius.hatenadiary.com/](http://gologius.hatenadiary.com/)
 
 # 製作物
 * モデリング
