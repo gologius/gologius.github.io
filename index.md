@@ -10,4 +10,7 @@
 * Twitter (gologius) [https://twitter.com/gologius](https://twitter.com/gologius)
 
 # 製作物
-* [モデリングしたもの](model_gallery.md)
+* モデリング
+  * [最初期の遺産](model_gallery_0.md)
+  * [版権もの](model_gallery_copy.md)
+  * [オリジナルデザイン](model_gallery_original.md)
