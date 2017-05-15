@@ -9,20 +9,22 @@
 
 <img src="images/orgA_1.png" width="400px">
 
-<img src="images/orgA_2.png" width="400px">
-
-<img src="images/orgA_3.png" width="400px">
-
 重武装Ver
 
-<img src="images/orgA_4.png" width="400px">
+<img src="images/orgA_2.png" width="400px">
 
 SD化。アイコン用に作成したけど背景が暗くて見えにくい・・・
 
-<img src="images/orgA_5.png" width="400px">
+<img src="images/orgA_3.png" width="400px">
 
 ## オリジナルロボットB
-どちらかといえばガンダムっぽい気がする
+どちらかといえばガンダムっぽい気がする.
+
+<img src="images/orgB_0.png" width="400px">
+
+<img src="images/orgB_1.png" width="400px">
+
+<img src="images/orgB_2.png" width="400px">
 
 ## 戦闘機
 マクロス風。変形はしない。
