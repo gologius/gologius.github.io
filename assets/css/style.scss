@@ -1,8 +1,9 @@
 ---
 ---
 
-// @import "{{ site.theme }}";
-@import 'jekyll-theme-cayman';
+$section-headings-color: #0086ff;
+
+@import "{{ site.theme }}";
 
 .page-header {
   background-color: #ff0000;
