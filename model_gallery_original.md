@@ -30,3 +30,5 @@ SD化。アイコン用に作成したけど背景が暗くて見えにくい・
 マクロス風。変形はしない。
 
 <img src="images/fighter_0.png" width="400px">
+
+# [TOPに戻る](index.md)
