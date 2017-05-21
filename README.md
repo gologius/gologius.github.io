@@ -1,5 +1,6 @@
 # gologius.github.io
-自分のサイト用のリポジトリです。
+自分のサイト用のリポジトリです→[https://gologius.github.io/](https://gologius.github.io/)
+
 基本的にMarkdownで書いています。
 
 以下は設定ファイルの説明
