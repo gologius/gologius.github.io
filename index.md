@@ -11,6 +11,8 @@
 * ブログ (gologiusの巣) [http://gologius.hatenadiary.com/](http://gologius.hatenadiary.com/)
 
 # 製作物
+* ソフトウェア
+  * [ゲーム](game.md)
 * モデリング
   * [最初期の遺産](model_gallery_0.md)
   * [版権もの](model_gallery_copy.md)
