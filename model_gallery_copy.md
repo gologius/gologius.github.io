@@ -7,6 +7,8 @@
 「機動戦士ガンダム 鉄血のオルフェンズ」の主人公の最後の機体です．
 このモデルから，Metasequoiaでモデリング→Blenderでレンダリング，という流れに
 
+恋ダンスを躍らせたりした https://www.youtube.com/watch?v=Y7CHIxtBzyA
+
 <figure>
 <img src="images/copy/barbatos_0.png" width="400px">
 <figcaption>初めてのBlenderを使ったレンダリング</figcaption>
