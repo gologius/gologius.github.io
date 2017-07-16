@@ -6,7 +6,7 @@
 
 <img src="images/original/orgB_0.png" width="400px">
 
-<img src="imagesoriginal//orgB_1.png" width="400px">
+<img src="images/original//orgB_1.png" width="400px">
 
 <img src="images/original/orgB_2.png" width="400px">
 
