@@ -4,7 +4,8 @@
 @import "{{ site.theme }}";
 .page-header {
     background-color: #55dddd;
-    background-image: linear-gradient(45deg, #0055ff, #55dd77);
+    background-image: url(images/header.jpg);
+    //background-image: linear-gradient(45deg, #0055ff, #55dd77);
 }
 figure {
     margin-bottom: 40px;
