@@ -5,6 +5,8 @@
 .page-header {
     background-color: #55dddd;
     background-image: url(../../images/material/header.jpg); //このファイルがあるパスに注意
+    background-repeat: no-repeat;
+    background-size: cover;
     //background-image: linear-gradient(45deg, #0055ff, #55dd77);
 }
 figure {
