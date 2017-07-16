@@ -1,24 +1,40 @@
 # 版権もののモデリング一覧
 元ネタありのモデリング。
 
-## 03-AALIYAH
-「アーマードコア4」の機体 03-AALIYAHです。
-細部が違うのは技術力不足です。
+## ガンダムバルバトスルプスレクス
+2017/07/16
 
-<img src="images/aaliyah_0.png" width="400px">
+「機動戦士ガンダム 鉄血のオルフェンズ」の主人公の最後の機体です．
+このモデルから，Metasequoiaでモデリング→Blenderでレンダリング，という流れに
 
-背中の武装はアサルトキャノンをオマージュしたオリジナル武装です。
+<figure>
+<img src="images/copy/barbatos_0.png" width="400px">
+<figcaption>初めてのBlenderを使ったレンダリング</figcaption>
+</figure>
 
-<img src="images/aaliyah_1.png" width="400px">
+<figure>
+<img src="images/copy/barbatos_1.png" width="400px">
+<figcaption>内部フレームも作りましたが全然外から見えない</figcaption>
+</figure>
 
 ## 不知火
 「マブラヴ オルタネイティヴ」より戦術機の不知火です
 武装が違うのは，ゲーム作成していたときに，武装をカスタマイズした結果だからです．
 
-<img src="images/siranui_0.png" width="400px">
+<img src="images/copy/siranui_0.png" width="400px">
 
 SD化してTwitterのアイコンに使用したりもしてます
 
-<img src="images/siranui_1.png" width="400px">
+<img src="images/copy/siranui_1.png" width="400px">
+
+## 03-AALIYAH
+「アーマードコア4」の機体 03-AALIYAHです。
+細部が違うのは技術力不足です。
+
+<img src="images/copy/aaliyah_0.png" width="400px">
+
+背中の武装はアサルトキャノンをオマージュしたオリジナル武装です。
+
+<img src="images/copy/aaliyah_1.png" width="400px">
 
 # [TOPに戻る](index.md)
