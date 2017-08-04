@@ -12,4 +12,10 @@
 <figcaption></figcaption>
 </figure>
 
+## [Suika Crash](suika_crash.md)
+<figure>
+<img src="images/suika_crash/3.png" width="400px">
+<figcaption></figcaption>
+</figure>
+
 # [TOPに戻る](index.md)
