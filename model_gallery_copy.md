@@ -15,7 +15,7 @@
 </figure>
 
 <figure>
-<img src="images/copy/barbatos_1.png" width="400px">
+<img src="images/copy/barbatos_1.jpg" width="400px">
 <figcaption> </figcaption>
 </figure>
 
