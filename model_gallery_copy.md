@@ -16,6 +16,11 @@
 
 <figure>
 <img src="images/copy/barbatos_1.png" width="400px">
+<figcaption> </figcaption>
+</figure>
+
+<figure>
+<img src="images/copy/barbatos_2.png" width="400px">
 <figcaption>内部フレームも作りましたが全然外から見えない</figcaption>
 </figure>
 
