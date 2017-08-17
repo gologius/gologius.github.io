@@ -7,7 +7,6 @@ https://github.com/gologius/RoombaControl
 
 <figure>
 <img src="images/tools/RoombaControl.png" width="400px">
-width="400px">
 <figcaption></figcaption>
 </figure>
 
@@ -21,7 +20,6 @@ ZIPファイルの中の画像を見ながら，ファイル名を変更する�
 
 <figure>
 <img src="images/tools/FileTagManager.png" width="400px">
-width="400px">
 <figcaption></figcaption>
 </figure>
 
