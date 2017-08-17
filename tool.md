@@ -6,7 +6,8 @@
 https://github.com/gologius/RoombaControl
 
 <figure>
-<img src="https://github.com/gologius/RoombaControl/blob/master/screenshot.png" width="400px">
+<img src="images/tools/RoombaControl.png" width="400px">
+width="400px">
 <figcaption></figcaption>
 </figure>
 
@@ -19,7 +20,8 @@ ZIPファイルの中の画像を見ながら，ファイル名を変更する�
 ファイル名は正規表現を用いてタグとして抽出することができます．
 
 <figure>
-<img src="https://github.com/gologius/FileTagManager/blob/master/screenshots/1.png" width="400px">
+<img src="images/tools/FileTagManager.png" width="400px">
+width="400px">
 <figcaption></figcaption>
 </figure>
 
@@ -27,7 +29,7 @@ ZIPファイルの中の画像を見ながら，ファイル名を変更する�
 ファイル名を、作成日時または更新日時にリネームすることができます。
 
 <figure>
-<img src="https://github.com/gologius/DateNameRenamer/blob/master/screenshot.png" width="400px">
+<img src="images/tools/DateNameRenamer.png" width="400px">
 <figcaption></figcaption>
 </figure>
 
