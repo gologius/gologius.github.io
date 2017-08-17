@@ -13,6 +13,7 @@
 # 製作物
 * ソフトウェア
   * [ゲーム](game.md)
+  * [ツール](tool.md)
 * モデリング
   * [最初期の遺産](model_gallery_old.md)
   * [版権もの](model_gallery_copy.md)
