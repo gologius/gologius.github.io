@@ -2,6 +2,11 @@
 ---
 
 @import "{{ site.theme }}";
+
+body {
+    padding: 10px;   
+}
+
 .page-header {
     background-color: #bebebe;
     background-image: url(../../images/material/header.jpg); //このファイルがあるパスに注意
