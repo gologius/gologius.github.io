@@ -4,6 +4,7 @@
 ## [アタレ、サラバアタエラレン](atare_saraba.md)
 <figure>
 <img src="images/atare/20180401102444.png" width="400px">
+<figcaption></figcaption>
 </figure>
 
 ## [Suika Crash](suika_crash.md)
@@ -15,12 +16,6 @@
 ## [Donou Defence](donou_defence.md)
 <figure>
 <img src="images/donou_defence/dd2.jpg" width="400px">
-<figcaption></figcaption>
-</figure>
-
-## [Suika Crash](suika_crash.md)
-<figure>
-<img src="images/suika_crash/3.png" width="400px">
 <figcaption></figcaption>
 </figure>
 
