@@ -9,3 +9,5 @@
 * `/assets/css/style.scss`
     * 独自のcssの設定。`@import "{{ site.theme }}";`の次の行からscss形式で記入。
     * 現在使用しているテーマはcayman。使い方は[https://github.com/pages-themes/cayman](https://github.com/pages-themes/cayman)
+* `_layouts/default.html`
+    * 出力されるHTMLのテンプレート。カスタマイズしたければここを触る。caymanのhtmlを改造して使用している
