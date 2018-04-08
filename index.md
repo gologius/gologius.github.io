@@ -1,7 +1,8 @@
 # 自己紹介
 * プログラミング(Python, C#)
 * モデリング(Metasequoia)
-* たまにゲーム制作(Unity)
+* モーション作成（Akeytsu）
+* ゲーム制作(Unity)
 
 をしています．
 
