@@ -11,9 +11,23 @@ body {
   url("index.md")
 }
 
+//スマホ用
+@media screen and (max-width:640px){
+  .page-header {
+    background-image: url(../../images/material/header_sp.jpg); //このファイルがあるパスに注意
+  }
+}
+
+//PC用
+@media screen and (mix-width:799px){
+  .page-header {
+      background-image: url(../../images/material/header.jpg); //このファイルがあるパスに注意
+  }
+}
+
+//共通設定
 .page-header {
     background-color: #bebebe;
-    background-image: url(../../images/material/header.jpg); //このファイルがあるパスに注意
     background-repeat: no-repeat;
     background-position: center;
     //background-size: cover;
