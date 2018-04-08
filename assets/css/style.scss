@@ -20,7 +20,7 @@ body {
       background-image: url(../../images/material/header_sp.jpg); //このファイルがあるパスに注意
     }
     //PC用ヘッダ画像
-    @media only screen and (min-width: 799px) {
+    @media only screen and (min-width: 641px) {
       background-image: url(../../images/material/header.jpg); //このファイルがあるパスに注意
     }
 }
