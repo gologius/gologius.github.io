@@ -8,14 +8,12 @@ body {
 }
 
 .project-name {
-  a {
-    color : #FFFFFF;
-    text-shadow:
-          black 1px 1px 0, black -1px -1px 0,/*右下、左上*/
+  color : #FFFFFF;
+  text-shadow:
+        black 1px 1px 0, black -1px -1px 0,/*右下、左上*/
         black -1px 1px 0, black 1px -1px 0,/*右上、左下*/
         black 0px 1px 0, black  0-1px 0,/*右、左*/
         black -1px 0 0, black 1px 0 0;/*上、下*/
-    }
 }
 
 //共通設定
