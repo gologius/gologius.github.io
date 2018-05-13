@@ -13,13 +13,14 @@
 		var date = new Date();
 		var hour = date.getHours();
 		var min = date.getMinutes();
+		var sec = date.getSeconds();
 
-		if (min % 2 == 0) {
-			window.alert("現在は" + hour + "時" + min + "分です");
+		if (sec % 2 == 0) {
+			window.alert("現在は" + hour + "時" + min + "分" + sec + "秒です。（このアラートは秒が偶数のときに表示されます）");
 		}
 
 		function downloadCSV() {
-			if (window.confirm("CSVをダウンロードしますか？");) {
+			if (window.confirm("CSVをダウンロードしますか？")) {
 				location.href = "files/test.csv";
 			} else {
 				//何もしない
