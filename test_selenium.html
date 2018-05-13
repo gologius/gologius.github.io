@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>テストページ</title>
+	<meta name="description" content="説明文">
+</head>
+
+<body>
+	<script type="text/javascript">
+		var date = new Date();
+		var hour = date.getHours();
+		var min = date.getMinutes();
+
+		if (min % 2 == 0) {
+			window.alert("現在は" + hour + "時" + min + "分です");
+		}
+
+		function downloadCSV() {
+			if (window.confirm("CSVをダウンロードしますか？");) {
+				location.href = "files/test.csv";
+			} else {
+				//何もしない
+			}
+		}
+	</script>
+
+	<h1>テストページ</h1> テストページです。 検索キーワード：
+
+
+	<input type="text" name="名前"><br>
+	<br> ダウンロード：
+	<input type="button" value="CSVダウンロード" onclick="downloadCSV();"></button>
+
+</body>
+
+</html>
