@@ -31,4 +31,4 @@ SD化。アイコン用に作成したけど背景が暗くて見えにくい・
 
 <img src="images/original/fighter_0.png" width="400px">
 
-# [TOPに戻る](index.md)
+
