@@ -1,0 +1,11 @@
+table {
+  border: solid 1px #000000;
+}
+
+table td {
+  border: solid 1px #000000;
+}
+
+table thead {
+  background-color: #dddddd;
+}
