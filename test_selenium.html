@@ -28,12 +28,131 @@
 		}
 	</script>
 
-	<h1>テストページ</h1> テストページです。 検索キーワード：
+	<h1>テストページ</h1> テストページです。
+	<br>
+	<table>
+		<tr>
+			<td>検索キーワード：</td>
+			<td> <input type="text" name="名前"></td>
+		</tr>
+		<tr>
+			<td>ダウンロード：</td>
+			<td> <input type="button" value="CSVダウンロード" onclick="downloadCSV();"></button>
+			</td>
+		</tr>
+	</table>
 
+	<h1>ヤマト料金表</h1> http://www.kuronekoyamato.co.jp/ytc/search/yamatobin/yamatobin_ryokin/osaka.html
 
-	<input type="text" name="名前"><br>
-	<br> ダウンロード：
-	<input type="button" value="CSVダウンロード" onclick="downloadCSV();"></button>
+	<div class="articleTypeA">
+		<div class="clearFix">
+			<p class="note" style="margin-top:10px;"><span class="yen">単位：円（税込）</span></p>
+		</div>
+		<table class="chart">
+			<colgroup>
+				<col width="8%">
+				<col width="11%">
+				<col width="9%">
+				<col width="9%">
+				<col width="9%">
+				<col width="9%">
+				<col width="9%">
+				<col width="9%">
+				<col width="9%">
+				<col width="9%">
+				<col width="9%">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th colspan="2">着地</th>
+					<th>30kg<br>まで</th>
+					<th>40kg<br>まで</th>
+					<th>60kg<br>まで</th>
+					<th>80kg<br>まで</th>
+					<th>100kg<br>まで</th>
+					<th>120kg<br>まで</th>
+					<th>140kg<br>まで</th>
+					<th>160kg<br>まで</th>
+					<th>180kg<br>まで</th>
+				</tr>
+				<tr class="odd">
+					<td rowspan="2" class="alignL">北海道</td>
+					<td class="alignL">札幌市</td>
+					<td>3,338</td>
+					<td>4,170</td>
+					<td>5,207</td>
+					<td>6,967</td>
+					<td>8,339</td>
+					<td>9,743</td>
+					<td>11,147</td>
+					<td>12,551</td>
+					<td>13,955</td>
+				</tr>
+				<tr class="odd">
+					<td class="alignL">上記以外</td>
+					<td>3,252</td>
+					<td>4,094</td>
+					<td>5,142</td>
+					<td>6,827</td>
+					<td>8,187</td>
+					<td>9,581</td>
+					<td>10,974</td>
+					<td>12,367</td>
+					<td>13,760</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="alignL">青森</td>
+					<td>2,928</td>
+					<td>3,576</td>
+					<td>4,224</td>
+					<td>5,412</td>
+					<td>6,384</td>
+					<td>7,280</td>
+					<td>8,177</td>
+					<td>9,073</td>
+					<td>9,969</td>
+				</tr>
+				<tr class="odd">
+					<td colspan="2" class="alignL">秋田</td>
+					<td>2,820</td>
+					<td>3,360</td>
+					<td>3,900</td>
+					<td>4,980</td>
+					<td>5,844</td>
+					<td>6,740</td>
+					<td>7,637</td>
+					<td>8,533</td>
+					<td>9,429</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="alignL">岩手</td>
+					<td>2,820</td>
+					<td>3,360</td>
+					<td>3,900</td>
+					<td>4,980</td>
+					<td>5,844</td>
+					<td>6,740</td>
+					<td>7,637</td>
+					<td>8,533</td>
+					<td>9,429</td>
+				</tr>
+				<tr class="odd">
+					<td rowspan="2" class="alignL">宮城</td>
+					<td class="alignL">仙台市</td>
+					<td>2,777</td>
+					<td>3,209</td>
+					<td>3,759</td>
+					<td>4,688</td>
+					<td>5,455</td>
+					<td>6,157</td>
+					<td>6,859</td>
+					<td>7,561</td>
+					<td>8,263</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- /.articleTypeA -->
+	</div>
 
 </body>
 
