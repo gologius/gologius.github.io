@@ -27,6 +27,14 @@
 				//何もしない
 			}
 		}
+
+		function downloadMovie() {
+			if (window.confirm("動画をダウンロードしますか？(約20MB)")) {
+				location.href = "files/test.mp4";
+			} else {
+				//何もしない
+			}
+		}
 	</script>
 
 	<h1>テストページ</h1> テストページです。
@@ -37,8 +45,13 @@
 			<td> <input type="text" name="名前"></td>
 		</tr>
 		<tr>
-			<td>ダウンロード：</td>
+			<td>csvダウンロード：</td>
 			<td> <input type="button" value="CSVダウンロード" onclick="downloadCSV();"></button>
+			</td>
+		</tr>
+		<tr>
+			<td>動画ダウンロード：</td>
+			<td> <input type="button" value="動画ダウンロード(約20MB)" onclick="downloadMovie();"></button>
 			</td>
 		</tr>
 	</table>
