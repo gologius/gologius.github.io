@@ -16,8 +16,9 @@
   * [ゲーム](game.md)
   * [ツール](tool.md)
   * [小規模スクリプト(Gist)](https://gist.github.com/gologius)
-  * [実験室](test.md)
 * モデリング
   * [最初期の遺産](model_gallery_old.md)
   * [版権もの](model_gallery_copy.md)
   * [オリジナルデザイン](model_gallery_original.md)
+* その他
+  * [実験室](test.md)
