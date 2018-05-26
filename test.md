@@ -10,5 +10,5 @@
 ## フレームレイアウトサイト
 
 * 2018/05/26 セレニウム自動テスト用
-* <a href="test/test_login.html" target="_blank">ログインページ</a>
+* <a href="javascript:void(0);" onclick="window.open('test_login.html', 'window', 'width=800,height=600') ">ログインページ</a>
 * ※テストなのでログイン時に何か認証されるわけではありません
