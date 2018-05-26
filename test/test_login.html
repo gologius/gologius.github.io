@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>テストページ</title>
+	<meta name="description" content="説明文">
+	<link rel="stylesheet" type="text/css" href="test.css">
+</head>
+
+<body>
+	<script type="text/javascript">
+		var date = new Date();
+		var hour = date.getHours();
+		var min = date.getMinutes();
+		var sec = date.getSeconds();
+
+		if (sec % 2 == 0) {
+			window.alert("現在は" + hour + "時" + min + "分" + sec + "秒です。（このアラートは秒が偶数のときに表示されます）");
+		}
+
+		function downloadCSV() {
+			if (window.confirm("CSVをダウンロードしますか？")) {
+				location.href = "files/test.csv";
+			} else {
+				//何もしない
+			}
+		}
+
+		function downloadMovie() {
+			if (window.confirm("動画をダウンロードしますか？(約20MB)")) {
+				location.href = "files/test.mp4";
+			} else {
+				//何もしない
+			}
+		}
+	</script>
+
+	<h1>テストページ</h1> テストページです。
+	<br>
+
+	<ui>
+			<li>ID：<input type="text" name="ID"></li>
+			<li>PW：<input type="text" name="PW"></li>
+			<li>動画ダウンロード：<input type="button" value="CSVダウンロード" ></li>
+	</ui>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5, 2014</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>
+
+</html>
