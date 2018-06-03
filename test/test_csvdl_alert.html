@@ -16,9 +16,7 @@
 		var min = date.getMinutes();
 		var sec = date.getSeconds();
 
-		if (sec % 2 == 0) {
-			window.alert("現在は" + hour + "時" + min + "分" + sec + "秒です。（このアラートは秒が偶数のときに表示されます）");
-		}
+		window.alert("現在は" + hour + "時" + min + "分" + sec + "秒です");
 
 		function downloadCSV() {
 			if (window.confirm("CSVをダウンロードしますか？")) {
