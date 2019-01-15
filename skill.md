@@ -8,7 +8,9 @@
     * .Net系。Windowsフォームアプリの作り方は大体分かる
 * Python
     * FlaskでWebアプリは何個か作成した
-* HTML+CSS+JavaScript(JQuery)  最近のはやりフレームワークがよくわからない
+* HTML+CSS+JavaScript(JQuery)  
+    * HTML+CSSを全部一から打ってHP作成したことがある世代です
+    * 最近のはやりフレームワークは使ったことないです（Vue.jsとかAngularとか）
 
 ## 1年以上
 * C (学部の課題で)
@@ -19,6 +21,7 @@
 
 ## 1か月
 * Adobe Illustrator
+    * チュートリアルを一通りやった。既存ファイルのメンテ程度なら可能
 
 ## かじった or 放置中
 * Blender （操作難しい・・・）
