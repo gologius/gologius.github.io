@@ -1,10 +1,10 @@
 # 自己紹介
 * プログラミング(Python, C#)
-* モデリング(Metasequoia)
+* モデリング (Metasequoia)
 * モーション作成（Akeytsu）
-* ゲーム制作(Unity)
+* ゲーム制作 (Unity)
 
-をしています．
+などをしています．なにができるかは[スキル](skill.md)を参照ください。
 
 # リンク
 * GitHub (gologius) [https://github.com/gologius](https://github.com/gologius)
