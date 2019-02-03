@@ -4,7 +4,10 @@
 * モーション作成（Akeytsu）
 * ゲーム制作 (Unity)
 
-などをしています．なにができるかは[スキル](skill.md)を参照ください。
+などをしています
+
+# 経歴、できること
+[スキル](skill.md)をご覧ください。
 
 # リンク
 * GitHub (gologius) [https://github.com/gologius](https://github.com/gologius)
