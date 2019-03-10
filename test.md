@@ -11,8 +11,6 @@
 
 ## フレームレイアウトサイト
 
-* セレニウム自動テスト用 初級
-  * <a href="test/test_element.html">
-* セレニウム自動テスト用 中級
-  * <a href="javascript:void(0);" onclick="window.open('test/test_login.html', 'window', 'width=800,height=600') ">ログインページ</a>
-  * ※テストなのでログイン時に何か認証されるわけではありません
+* <a href="test/selenium_lecture_1.html">セレニウム自動テスト用 その１ 要素取得、操作</a>
+* <a href="test/selenium_lecture_2.html">セレニウム自動テスト用 その２ 別ウインドウ、アラート</a>
+* <a href="test/selenium_lecture_3.html">セレニウム自動テスト用 その３ フレームレイアウト</a>
