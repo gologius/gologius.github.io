@@ -31,22 +31,14 @@ function get_random_text(){
 	return Math.random().toString(36).slice(-8)
 }
 	
-function show_alert_by_urlparam(){
+function show_alert(){
 	
-	var url   = location.href;
-	params    = url.split("?");
+	var date = new Date();
+	var hour = date.getHours();
+	var min = date.getMinutes();
+	var sec = date.getSeconds();
 
-	if(params[1].indexOf('alert=True') >= 0){
-		var date = new Date();
-		var hour = date.getHours();
-		var min = date.getMinutes();
-		var sec = date.getSeconds();
-
-		window.alert("現在は" + hour + "時" + min + "分" + sec + "秒です");
-		
-		show_result("アラートを表示しました");
-	}
-	else {
-		show_result("アラートは表示しませんでした");
-	}
+	window.alert("現在は" + hour + "時" + min + "分" + sec + "秒です");
+	
+	show_result("アラートを表示しました");
 }
