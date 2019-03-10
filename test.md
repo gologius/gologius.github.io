@@ -11,6 +11,8 @@
 
 ## フレームレイアウトサイト
 
-* 2018/05/26 セレニウム自動テスト用
-* <a href="javascript:void(0);" onclick="window.open('test/test_login.html', 'window', 'width=800,height=600') ">ログインページ</a>
-* ※テストなのでログイン時に何か認証されるわけではありません
+* セレニウム自動テスト用 初級
+  * <a href="test/test_element.html">
+* セレニウム自動テスト用 中級
+  * <a href="javascript:void(0);" onclick="window.open('test/test_login.html', 'window', 'width=800,height=600') ">ログインページ</a>
+  * ※テストなのでログイン時に何か認証されるわけではありません
