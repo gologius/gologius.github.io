@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>テストページ</title>
+	<meta name="description" content="説明文">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/test.js"></script>
+	<link rel="stylesheet" type="text/css" href="test.css">
+	<style>
+		ul {
+	  	list-style: none;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>テストページ</h1>
+	
+	<h2 id="result">html要素選択結果がここにセットされます</h2>
+	
+	<div>
+		<ui>
+			<li><input id ="aaa" type="button" value="ID指定" onclick="show_result('ID指定');"/></li>
+			<li><input class="bbb" type="button" value="CLASS指定" onclick="show_result('CLASS指定');"/></li>
+			<li><input name="ccc" type="button" value="NAME指定" onclick="show_result('NAME指定');"/></li>
+			<li><input type="button" value="XPATH指定" onclick="show_result('XPATH指定');"/></li>
+			<li><input type="button" value="内部テキスト指定" onclick="show_result('内部テキスト指定');"/></li>
+			<li><a href="#" onclick="show_result('リンク名称指定');">リンク名称指定をする</a></li>
+		</ui>
+	</div>
+	
+	<form>
+	<p>性別は？</p>
+	<input type="radio" name="gender" value="male">男性
+	<input type="radio" name="gender" value="female">女性
+	
+	<p>年齢は？</p>
+	<select name="old">
+		<option value="item1">0～10才</option>
+		<option value="item2">11～50才</option>
+		<option value="item3">50才～</option>
+	</select>
+
+	<p>名前は？</p>
+	<input type="text" name="yourname">	
+
+	<p>このサイトはテストサイトということは理解していますよね？</p>	
+	<input type="checkbox" name="understand" value="yes">理解してます
+	
+	</form>
+	
+	
+</body>
+
+</html>
