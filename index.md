@@ -25,3 +25,6 @@
   * [オリジナルデザイン](model_gallery_original.md)
 * その他
   * [実験室](test.md)
+
+# 連絡先
+ TwitterのDM（[https://twitter.com/gologius](https://twitter.com/gologius)）からお願いします
