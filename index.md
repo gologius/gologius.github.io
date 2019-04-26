@@ -27,4 +27,4 @@
   * [実験室](test.md)
 
 # 連絡先
- TwitterのDM（[https://twitter.com/gologius](https://twitter.com/gologius)）からお願いします
+ [TwitterのDM](https://twitter.com/gologius)からお願いします
