@@ -4,7 +4,7 @@
 
 # 2020/06/06 Vueテスト用
 
-* <a href="test/pulldown_test/top.html">Vueで階層式プルダウンを作る</a>
+* <a href="test/PULLDOWN_SAMPLE/top.html">Vueで階層式プルダウンを作る</a>
 
 ## ページ遷移直後にアラートが表示されるパターン
 
