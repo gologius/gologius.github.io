@@ -22,7 +22,7 @@ const MENU_M = [
     { layer: 2, name: 'キリンの腕', id: '10', before_id: '5' },
 ];
 
-var vivr_menu = new Vue({
+var pulldown = new Vue({
     el: '#pulldown',
     data: {
         selected_stack: ['', '', ''], //ユーザー選択結果
