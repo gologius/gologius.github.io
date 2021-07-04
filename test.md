@@ -2,7 +2,10 @@
 
 個人的実験用です。
 
-# 2020/06/06 Vueテスト用
+# ブラウザからEXEを呼び出す テスト用
+* <a href="test/blowser_to_call_exe/test1.html">メモ帳呼び出し1</a>
+
+# Vueテスト用
 
 * <a href="test/PULLDOWN_SAMPLE/top.html">Vueで階層式プルダウンを作る</a>
 
