@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>クライアント呼び出し</title>
+</head>
+
+<body>
+	<h1>バイト指定</h1>
+	バイト数<input id="byte_count"> <button onclick="set_byte()">反映</button>
+	<br>
+	<a id="exetarget_ex" href="">サンプルアプリxyz呼び出し バイト数指定</a>
+
+	<script>
+		function set_byte() {
+			let byte_count =  document.getElementById("byte_count").value;
+			let chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+			let rand_str = '';
+			for ( var i = 0; i < byte_count; i++ ) {
+				rand_str += chars.charAt(Math.floor(Math.random() * chars.length));
+			}
+
+			var target = document.getElementById("exetarget_ex");
+			target.href = "xyz:" + rand_str;
+			console.log(byte_count);
+			console.log(rand_str);
+		}
+	</script>
+
+	<h1>普通に呼び出す</h1>
+	<a id="exetarget1" href="">サンプルアプリxyz呼び出し 全角100文字＋＠</a>
+	<br>
+	<a id="exetarget2" href="">サンプルアプリxyz呼び出し 全角300文字＋＠</a>
+	<br>
+	<a id="exetarget3" href="">サンプルアプリxyz呼び出し 全角600文字＋＠</a>
+	
+	<script>
+		var obj = {};		
+		obj.tel = '0120-00-0000';
+		obj.company = '株式会社テスト';
+		obj.name = '田中 太郎'
+		
+		//全角100文字
+		obj.master1 = 'あいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこ';
+		var jsontext1 = JSON.stringify(obj);
+		var target = document.getElementById("exetarget1")
+		target.href = "xyz:" + jsontext1;
+
+		//全角300文字
+		obj.master6 = 'あいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこ';
+		obj.master7 = 'あいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこ';		
+		var jsontext2 = JSON.stringify(obj);
+		var target = document.getElementById("exetarget2")
+		target.href = "xyz:" + jsontext2;
+
+		//全角600文字
+		obj.master11 = 'あいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこ';
+		obj.master12 = 'あいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこ';
+		obj.master13 = 'あいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこ';		
+		var jsontext3 = JSON.stringify(obj);
+		var target = document.getElementById("exetarget3")
+		target.href = "xyz:" + jsontext3;
+	</script>
+</body>
+
+</html>
