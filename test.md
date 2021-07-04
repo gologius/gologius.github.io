@@ -4,6 +4,7 @@
 
 ## ブラウザからEXEを呼び出す
 * <a href="./test/blowser_to_call_exe/test1.html">メモ帳呼び出し1</a>
+* <a href="./test/blowser_to_call_exe/test2.html">アプリ呼び出し2</a>
 
 ## Vueテスト用
 
