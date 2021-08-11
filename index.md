@@ -13,7 +13,7 @@
 * GitHub (gologius) [https://github.com/gologius](https://github.com/gologius)
 * Twitter (＠gologius) [https://twitter.com/gologius](https://twitter.com/gologius)
 * ブログ (gologiusの巣) [http://gologius.hatenadiary.com/](http://gologius.hatenadiary.com/)
-* 実験用WEBサーバー [https://www.gologius.com](https://www.gologius.com)
+* 実験用WEBサーバー  [https://www.gologius.com](https://www.gologius.com)
 
 # 製作物
 * ソフトウェア
