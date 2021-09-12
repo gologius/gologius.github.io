@@ -14,14 +14,15 @@
 * Twitter (＠gologius) [https://twitter.com/gologius](https://twitter.com/gologius)
 * ブログ (gologiusの巣) [http://gologius.hatenadiary.com/](http://gologius.hatenadiary.com/)
 * 実験用WEBサーバー  [https://www.gologius.com](https://www.gologius.com)
+	* CloudFront＋EC2の構成。普段はEC2は休止させていてCloudFrontのキャッシュが表示されているはず
 
 # 製作物
 * ソフトウェア
   * [ゲーム](game.md)
   * [ツール](tool.md)
   * [小規模スクリプト(Gist)](https://gist.github.com/gologius)
-* WEBアプリケーション
-  * [CSV2Excel](https://csv2excel.herokuapp.com/home)
+* WEBツール
+  * [行ったことがある都道府県チェックツール](/japan_map/index.html)
 * モデリング
   * [最初期の遺産](model_gallery_old.md)
   * [版権もの](model_gallery_copy.md)

@@ -1,0 +1,48 @@
+body {
+	width:1000px;
+	margin:auto;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style:none;
+}
+
+.state-container {
+	width:100%;
+	display: flex;
+	justify-content:space-between;
+	
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.state-group {
+	display: inline-block;
+}
+
+.visited-count{
+	color:blue;
+	font-weight:bold;	
+	font-size:150%;
+}
+
+.perfect{
+	color:red;
+	font-weight:bold;	
+	font-size:150%;
+}
+
+.visited {
+	color:red;
+	font-weight:bold;
+}
+
+.result {
+	color:red;
+	font-weight:bold;
+	font-size:150%;
+}

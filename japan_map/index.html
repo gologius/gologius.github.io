@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>行ったことがある都道府県チェックツール</title>
+    <meta name="description" content="次どこに旅行するか迷ったときに使ってください">
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+	
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="https://unpkg.com/japan-map-js@1.0.1/dist/jpmap.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+
+<h1>行ったことがある都道府県チェックツール</h1>
+<p>次どこに旅行するか迷ったときにでも使ってください。</p>
+
+<div id="state-list">
+	<p>
+		行ったことがある都道府県：<span class="visited-count">{{num_of_visited}} / 47</span> (残り{{47-num_of_visited}})
+		<span v-if="num_of_visited==47" class="perfect">Perfect!!やったね!!</span>
+	</p>
+	
+	<p>
+		<select v-model="filter_flag">
+			<option value="">全て</option>
+			<option value="0">未訪問のみ</option>
+			<option value="1">訪問済のみ</option>
+		</select>
+		を対象に
+		<button v-on:click="select_random()">ランダムで都道府県を一つ決める</button>
+		
+		<span v-if="random_state.length > 0">
+		→
+		次は<span class="result">{{random_state}}</span>に行きなさい
+		</span>
+	</p>
+	
+	<div id="my-map"></div>
+	
+	<div class="state-container">
+	<div class="state-group">
+		<h3>北海道・東北</h3>	
+		<ul>
+			<li v-bind:class="{visited: areas[0].visited}">{{areas[0].name}}</li>
+			<li v-bind:class="{visited: areas[1].visited}">{{areas[1].name}}</li>
+			<li v-bind:class="{visited: areas[2].visited}">{{areas[2].name}}</li>
+			<li v-bind:class="{visited: areas[3].visited}">{{areas[3].name}}</li>
+			<li v-bind:class="{visited: areas[4].visited}">{{areas[4].name}}</li>
+			<li v-bind:class="{visited: areas[5].visited}">{{areas[5].name}}</li>
+			<li v-bind:class="{visited: areas[6].visited}">{{areas[6].name}}</li>
+		</ul>
+	</div>
+
+	<div class="state-group">
+		<h3>関東</h3>
+		<ul>
+			<li v-bind:class="{visited: areas[7].visited}">{{areas[7].name}}</li>
+			<li v-bind:class="{visited: areas[8].visited}">{{areas[8].name}}</li>
+			<li v-bind:class="{visited: areas[9].visited}">{{areas[9].name}}</li>
+			<li v-bind:class="{visited: areas[10].visited}">{{areas[10].name}}</li>
+			<li v-bind:class="{visited: areas[11].visited}">{{areas[11].name}}</li>
+			<li v-bind:class="{visited: areas[12].visited}">{{areas[12].name}}</li>
+			<li v-bind:class="{visited: areas[13].visited}">{{areas[13].name}}</li>
+		</ul>
+	</div>
+	
+	<div class="state-group">
+		<h3>中部</h3>
+		<ul>
+			<li v-bind:class="{visited: areas[14].visited}">{{areas[14].name}}</li>
+			<li v-bind:class="{visited: areas[15].visited}">{{areas[15].name}}</li>
+			<li v-bind:class="{visited: areas[16].visited}">{{areas[16].name}}</li>
+			<li v-bind:class="{visited: areas[17].visited}">{{areas[17].name}}</li>
+			<li v-bind:class="{visited: areas[18].visited}">{{areas[18].name}}</li>
+			<li v-bind:class="{visited: areas[19].visited}">{{areas[19].name}}</li>
+			<li v-bind:class="{visited: areas[20].visited}">{{areas[20].name}}</li>
+			<li v-bind:class="{visited: areas[21].visited}">{{areas[21].name}}</li>
+			<li v-bind:class="{visited: areas[22].visited}">{{areas[22].name}}</li>
+		</ul>
+	</div>
+	
+	<div class="state-group">
+		<h3>近畿</h3>
+		<ul>
+			<li v-bind:class="{visited: areas[23].visited}">{{areas[23].name}}</li>
+			<li v-bind:class="{visited: areas[24].visited}">{{areas[24].name}}</li>
+			<li v-bind:class="{visited: areas[25].visited}">{{areas[25].name}}</li>
+			<li v-bind:class="{visited: areas[26].visited}">{{areas[26].name}}</li>
+			<li v-bind:class="{visited: areas[27].visited}">{{areas[27].name}}</li>
+			<li v-bind:class="{visited: areas[28].visited}">{{areas[28].name}}</li>
+			<li v-bind:class="{visited: areas[29].visited}">{{areas[29].name}}</li>
+		</ul>
+	</div>
+
+	<div class="state-group">
+		<h3>中国</h3>
+		<ul>
+			<li v-bind:class="{visited: areas[30].visited}">{{areas[30].name}}</li>
+			<li v-bind:class="{visited: areas[31].visited}">{{areas[31].name}}</li>
+			<li v-bind:class="{visited: areas[32].visited}">{{areas[32].name}}</li>
+			<li v-bind:class="{visited: areas[33].visited}">{{areas[33].name}}</li>
+			<li v-bind:class="{visited: areas[34].visited}">{{areas[34].name}}</li>
+		</ul>
+	</div>
+
+	<div class="state-group">
+		<h3>四国</h3>
+		<ul>
+			<li v-bind:class="{visited: areas[35].visited}">{{areas[35].name}}</li>
+			<li v-bind:class="{visited: areas[36].visited}">{{areas[36].name}}</li>
+			<li v-bind:class="{visited: areas[37].visited}">{{areas[37].name}}</li>
+			<li v-bind:class="{visited: areas[38].visited}">{{areas[38].name}}</li>
+		</ul>
+	</div>
+
+	<div class="state-group">
+		<h3>九州・沖縄</h3>
+		<ul>
+			<li v-bind:class="{visited: areas[39].visited}">{{areas[39].name}}</li>
+			<li v-bind:class="{visited: areas[40].visited}">{{areas[40].name}}</li>
+			<li v-bind:class="{visited: areas[41].visited}">{{areas[41].name}}</li>
+			<li v-bind:class="{visited: areas[42].visited}">{{areas[42].name}}</li>
+			<li v-bind:class="{visited: areas[43].visited}">{{areas[43].name}}</li>
+			<li v-bind:class="{visited: areas[44].visited}">{{areas[44].name}}</li>
+			<li v-bind:class="{visited: areas[45].visited}">{{areas[45].name}}</li>
+			<li v-bind:class="{visited: areas[46].visited}">{{areas[46].name}}</li>
+		</ul>
+	</div>
+	</div>
+	
+	<!--
+	<h3>↓結果コピペ用</h3>
+	<ul v-for="item in areas">
+		<li v-if="filter_flag == '' || (filter_flag == 0 && !item.visited) || (filter_flag == 1 && item.visited)">
+			{{item.name}} 
+		</li>
+	</ul>
+	-->
+	
+</div>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>
