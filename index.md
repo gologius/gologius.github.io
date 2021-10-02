@@ -14,7 +14,7 @@
 * Twitter (＠gologius) [https://twitter.com/gologius](https://twitter.com/gologius)
 * ブログ (gologiusの巣) [http://gologius.hatenadiary.com/](http://gologius.hatenadiary.com/)
 * 実験用WEBサーバー  [https://www.gologius.com](https://www.gologius.com)
-	* CloudFront＋EC2の構成。普段はEC2は休止させていてCloudFrontのキャッシュが表示されているはず
+	* AWS CloudFront + S3 の構成。 DNSや証明書周りもAWSを活用
 
 # 製作物
 * ソフトウェア
