@@ -33,7 +33,7 @@
     * <a href="test/selenium_lecture_1.html">セレニウム自動テスト用 その１ 要素取得、操作</a>
     * <a href="test/selenium_lecture_2.html">セレニウム自動テスト用 その２ 別ウインドウ、アラート</a>
     * <a href="test/selenium_lecture_3.html">セレニウム自動テスト用 その３ フレームレイアウト</a>
-  *  <a href="test/test_brouser_suggest/login1.html">ブラウザの個人情報オートフィルへの対応</a>
+  *  <a href="test/test_brouser_suggest/login1.html">ブラウザの個人情報オートフィルへの対応</a>  - <a href="https://gologius.hatenadiary.com/entry/2022/05/14/130150">ブログ記事</a>
 
 
 # リンク

@@ -7,5 +7,11 @@ function add_autocomplete_attribute(elm_name) {
     elm[0].setAttribute("autocomplete", yyyymmddhhmmss);
 }
 
-
+add_autocomplete_attribute("hainame");
+add_autocomplete_attribute("hainame2");
+add_autocomplete_attribute("haizip");
+add_autocomplete_attribute("haijusyo");
+add_autocomplete_attribute("haitel");
+add_autocomplete_attribute("haitel2");
+add_autocomplete_attribute("renname");
 add_autocomplete_attribute("rentel");
