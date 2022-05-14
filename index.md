@@ -33,6 +33,8 @@
     * <a href="test/selenium_lecture_1.html">セレニウム自動テスト用 その１ 要素取得、操作</a>
     * <a href="test/selenium_lecture_2.html">セレニウム自動テスト用 その２ 別ウインドウ、アラート</a>
     * <a href="test/selenium_lecture_3.html">セレニウム自動テスト用 その３ フレームレイアウト</a>
+  *  <a href="test/test_brouser_suggest/login1.html">ブラウザの個人情報オートフィルへの対応</a>
+
 
 # リンク
 * GitHub (gologius)  [https://github.com/gologius](https://github.com/gologius)
