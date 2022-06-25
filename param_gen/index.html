@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Edge起動するショートカットのパラメータ指定くん</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="./test.js"></script>
+</head>
+
+<body>
+<header>
+    <h1>Edge起動するショートカットのパラメータ指定くん</h1>
+	
+</header>
+
+    <div>
+
+            <h2>パラメータ</h2>
+
+            <p>
+                <label>Edgeのexe</label><br>
+                <input type="text" name="exe" minlength="1" maxlength="200" size="100" value="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe">
+            </p>
+
+            <p>
+				<label>新規ウインドウで開く</label><br>
+                <input type="text" name="newwindow" minlength="1" maxlength="16" value="--new-window">
+            </p>
+
+            <p>
+                <label>ウインドウサイズ</label><br>
+				<input type="text" name="size" minlength="1" maxlength="16" value=" --window-size="><br>
+                <input type="text" name="size-w" minlength="1" maxlength="5" size="5" value="500">
+                ,
+				<input type="text" name="size-h" minlength="1" maxlength="5" size="5" value="400">
+				</p>
+
+            <p>
+                <label>ウインドウ位置</label><br>
+                <input type="text" name="pos" minlength="1" maxlength="16" value="--window-position="><br>			
+                <input type="text" name="pos-x" minlength="1" maxlength="5" size="5" value="500">
+                ,
+				<input type="text" name="pos-y" minlength="1" maxlength="5" size="5" value="400">
+			</p>
+
+            <p>
+				<label>アプリモード</label><br>
+                <input type="text" name="appmode" minlength="1" maxlength="16" value="--app=">
+            </p>
+			
+			<p>
+                <label>デフォルトURL</label><br>
+                <input type="text" name="default-url" minlength="1" maxlength="16" size="50" value="https://www.yahoo.co.jp/">
+            </p>
+
+			
+			 <button onclick="generate_result()">生成</button>
+			
+			<h2>結果</h2>
+
+            <p>
+                <label>結果</label><br>
+                <input type="text" name="result" minlength="1" maxlength="200" size="100">
+            </p>
+			
+			<hr>
+			
+			<h1>使い方</h1>
+			
+			1)ショートカットを作成<br>
+			<img src="./1.png"><br>
+			
+			2)作成時に上記のツールで作ったパラメータをセットする<br>
+			<img src="./2.png"><br>
+			
+			作成後でもプロパティから変更可能<br>
+			<img src="./3.png"><br>
+
+		</div>
+
+</body>
+
+</html>
