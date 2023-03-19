@@ -9,11 +9,16 @@
 経歴、資格、スキルなどは[スキル](skill.md)をご覧ください。
 
 # 製作物
-* ソフトウェア
-  * [ゲーム](game.md)
-  * [ツール](tool.md)
+* [クライアントツール](tool.md)
 * WEBツール
   * [行ったことがある都道府県チェックツール](/japan_map/index.html)
+* [ゲーム](game.md)
+  * [うるせぇエビフライぶつけんぞ](https://unityroom.com/games/uruse_ebi)
+  * [過労死するまで働いて](https://unityroom.com/games/karoshi_hatarake)
+  * [アタレ、サラバアタエラレン](atare_saraba.md)
+  * [Suika Crash](suika_crash.md)
+  * [Donou Defence](donou_defence.md)
+  * [Directory War](directory_war.md)
 * [スクリプト(Gist)](https://gist.github.com/gologius)
   * [ CSVファイルをシンプルなExcelに変換する](https://gist.github.com/gologius/79f793e0f2a1fe7b321e9bdf2fc8f10c)
   * [ファイルをPW付で圧縮するバッチ](https://gist.github.com/gologius/2b3d1ae6b1140d50f077f34a370f9434)
