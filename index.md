@@ -15,6 +15,18 @@
   * [小規模スクリプト(Gist)](https://gist.github.com/gologius)
 * WEBツール
   * [行ったことがある都道府県チェックツール](/japan_map/index.html)
+* [スクリプト(Gist)](https://gist.github.com/gologius)
+  * [ CSVファイルをシンプルなExcelに変換する ](https://gist.github.com/gologius/79f793e0f2a1fe7b321e9bdf2fc8f10c)
+  * [コマンドライン引数で指定されたファイルを、ファイル名変換してからPW付で圧縮するバッチ ](https://gist.github.com/gologius/2b3d1ae6b1140d50f077f34a370f9434)
+  * [ディレクトリ構成を、HTML表に転記するスクリプトです](https://gist.github.com/gologius/2613f3c3c90b6470cda532a1097f033f)
+  * [ PDFをZIPに変換します](https://gist.github.com/gologius/3c6a207f2a0b56242f636fb7ab3bb472)
+  * [適当な画像をWikipediaとGoogleからDLします ](https://gist.github.com/gologius/dffd310024fdc621ec78644a3362a3d1)
+  * [ファイルのみをカレントディレクトリに移動するバッチ](https://gist.github.com/gologius/1edd8e411395904f3eb037295beca412)
+  * [ コマンドプロンプト（cmd.exe）で大きく「本番」と「検証」の文字を表示します ]()
+  * [ファイルのみをカレントディレクトリに移動するバッチ](https://gist.github.com/gologius/9e8a07dc622296aa162d275903efc825)
+  * [バックアップと、バックアップ先のファイルを一定期間後に削除するバッチ](https://gist.github.com/gologius/74ae221b6d09be98261db57a169b4492)
+  * [PythonでSlackのAPIを叩いて，メッセージを取得](https://gist.github.com/gologius/04c7767f2265db0353268229ea29eec3)
+  * [Unityでサーバーと通信するためのサンプルみたいなもの](https://gist.github.com/gologius/ddc4d2f1b3d9c3fc632922f767bca13b)
 * モデリング
   * [最初期の遺産](model_gallery_old.md)
   * [版権もの](model_gallery_copy.md)
