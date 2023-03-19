@@ -52,23 +52,22 @@
   <tr>
     <td>GitHub</td>
     <td>gologius</td>
-    <td> [https://github.com/gologius](https://github.com/gologius)</td>
+    <td> <a href="https://github.com/gologius">https://github.com/gologius</a></td>
   </tr>
   <tr>
     <td>Twitter</td>
     <td>＠gologius</td>
-    <td>[https://twitter.com/gologius](https://twitter.com/gologius)</td>
+    <td> <a href="https://twitter.com/gologius">https://twitter.com/gologius</a></td>
   </tr>
   <tr>
     <td>ブログ</td>
     <td>gologiusの巣</td>
-    <td>[http://gologius.hatenadiary.com/](http://gologius.hatenadiary.com/)</td>
+    <td> <a href="http://gologius.hatenadiary.com/">http://gologius.hatenadiary.com/</a></td>
   </tr>
   <tr>
     <td>実験用WEBサーバー </td>
     <td>www.gologius.com</td>
-    <td> [https://www.gologius.com](https://www.gologius.com)</td>
-    <td>AWS CloudFront + S3 の構成。 DNSや証明書周りもAWSを活用</td>
+    <td> <a href="https://www.gologius.com">https://www.gologius.com</a></td>
   </tr>
 </table>
 
