@@ -12,17 +12,16 @@
 * ソフトウェア
   * [ゲーム](game.md)
   * [ツール](tool.md)
-  * [小規模スクリプト(Gist)](https://gist.github.com/gologius)
 * WEBツール
   * [行ったことがある都道府県チェックツール](/japan_map/index.html)
 * [スクリプト(Gist)](https://gist.github.com/gologius)
-  * [ CSVファイルをシンプルなExcelに変換する ](https://gist.github.com/gologius/79f793e0f2a1fe7b321e9bdf2fc8f10c)
-  * [コマンドライン引数で指定されたファイルを、ファイル名変換してからPW付で圧縮するバッチ ](https://gist.github.com/gologius/2b3d1ae6b1140d50f077f34a370f9434)
+  * [ CSVファイルをシンプルなExcelに変換する](https://gist.github.com/gologius/79f793e0f2a1fe7b321e9bdf2fc8f10c)
+  * [ファイルをPW付で圧縮するバッチ](https://gist.github.com/gologius/2b3d1ae6b1140d50f077f34a370f9434)
   * [ディレクトリ構成を、HTML表に転記するスクリプトです](https://gist.github.com/gologius/2613f3c3c90b6470cda532a1097f033f)
   * [ PDFをZIPに変換します](https://gist.github.com/gologius/3c6a207f2a0b56242f636fb7ab3bb472)
-  * [適当な画像をWikipediaとGoogleからDLします ](https://gist.github.com/gologius/dffd310024fdc621ec78644a3362a3d1)
+  * [適当な画像をWikipediaとGoogleからDLします](https://gist.github.com/gologius/dffd310024fdc621ec78644a3362a3d1)
   * [ファイルのみをカレントディレクトリに移動するバッチ](https://gist.github.com/gologius/1edd8e411395904f3eb037295beca412)
-  * [ コマンドプロンプト（cmd.exe）で大きく「本番」と「検証」の文字を表示します ]()
+  * [ コマンドプロンプト（cmd.exe）で大きく「本番」と「検証」の文字を表示します ](https://gist.github.com/gologius/1edd8e411395904f3eb037295beca412)
   * [ファイルのみをカレントディレクトリに移動するバッチ](https://gist.github.com/gologius/9e8a07dc622296aa162d275903efc825)
   * [バックアップと、バックアップ先のファイルを一定期間後に削除するバッチ](https://gist.github.com/gologius/74ae221b6d09be98261db57a169b4492)
   * [PythonでSlackのAPIを叩いて，メッセージを取得](https://gist.github.com/gologius/04c7767f2265db0353268229ea29eec3)
@@ -33,7 +32,7 @@
   * [オリジナルデザイン](model_gallery_original.md)
 
 # その他実験
-  * ブラウザからEXEを呼び出す
+  * ブラウザからEXEを呼び出す - [ブログ記事](https://gologius.hatenadiary.com/entry/2021/07/04/154148)
     * <a href="./test/blowser_to_call_exe/test1.html">メモ帳呼び出し1</a>
     * <a href="./test/blowser_to_call_exe/test2.html">アプリ呼び出し2</a>
   * Vue
