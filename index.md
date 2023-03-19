@@ -48,11 +48,29 @@
   *  <a href="param_gen/index.html">Edge起動するショートカットのパラメータ指定くん</a>
 
 # リンク
-* GitHub (gologius)  [https://github.com/gologius](https://github.com/gologius)
-* Twitter (＠gologius)  [https://twitter.com/gologius](https://twitter.com/gologius)
-* ブログ (gologiusの巣)  [http://gologius.hatenadiary.com/](http://gologius.hatenadiary.com/)
-* 実験用WEBサーバー   [https://www.gologius.com](https://www.gologius.com)
-	* AWS CloudFront + S3 の構成。 DNSや証明書周りもAWSを活用
+<table>
+  <tr>
+    <td>GitHub</td>
+    <td>gologius</td>
+    <td> [https://github.com/gologius](https://github.com/gologius)</td>
+  </tr>
+  <tr>
+    <td>Twitter</td>
+    <td>＠gologius</td>
+    <td>[https://twitter.com/gologius](https://twitter.com/gologius)</td>
+  </tr>
+  <tr>
+    <td>ブログ</td>
+    <td>gologiusの巣</td>
+    <td>[http://gologius.hatenadiary.com/](http://gologius.hatenadiary.com/)</td>
+  </tr>
+  <tr>
+    <td>実験用WEBサーバー </td>
+    <td>www.gologius.com</td>
+    <td> [https://www.gologius.com](https://www.gologius.com)</td>
+    <td>AWS CloudFront + S3 の構成。 DNSや証明書周りもAWSを活用</td>
+  </tr>
+</table>
 
 # 連絡先
  [TwitterのDM](https://twitter.com/gologius)からお願いします
