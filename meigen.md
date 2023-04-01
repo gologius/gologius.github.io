@@ -35,9 +35,6 @@
   * [最初期の遺産](model_gallery_old.md)
   * [版権もの](model_gallery_copy.md)
   * [オリジナルデザイン](model_gallery_original.md)
-* 静的ページコンテンツ
-  * [いいなと思った名言メモ](meigen.md)
-  * [デートコースメモ](/date/index.html)
 
 # その他実験
   * ブラウザからEXEを呼び出す - [ブログ記事](https://gologius.hatenadiary.com/entry/2021/07/04/154148)
