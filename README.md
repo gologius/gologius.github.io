@@ -13,4 +13,4 @@
     * 出力されるHTMLのテンプレート。カスタマイズしたければここを触る。caymanのhtmlを改造して使用している
 
 
-※GoogleTagManagerのタグが埋め込まれているため注意
+※GoogleTagManagerのタグが埋め込まれているため注意をお願いします
