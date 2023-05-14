@@ -11,3 +11,6 @@
     * 現在使用しているテーマはcayman。使い方は[https://github.com/pages-themes/cayman](https://github.com/pages-themes/cayman)
 * `_layouts/default.html`
     * 出力されるHTMLのテンプレート。カスタマイズしたければここを触る。caymanのhtmlを改造して使用している
+
+
+※GoogleTagManagerのタグが埋め込まれているため注意
