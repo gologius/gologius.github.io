@@ -54,6 +54,7 @@
     * <a href="test/selenium_lecture_3.html">セレニウム自動テスト用 その３ フレームレイアウト</a>
   *  <a href="test/test_brouser_suggest/login1.html">ブラウザの個人情報オートフィルへの対応</a>  - <a href="https://gologius.hatenadiary.com/entry/2022/05/14/130150">ブログ記事</a>
   *  <a href="param_gen/index.html">Edge起動するショートカットのパラメータ指定くん</a>
+  *  <a href="test/file_upload/upload.html">バニラJSでファイルアップロードするサンプル</a>  - <a href="https://gologius.hatenadiary.com/entry/2023/06/24/143816">ブログ記事</a>
 
 # リンク
 <table>
