@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>アップロード</title>
+    <link rel="stylesheet" type="text/css" href="./upload.css">
+</head>
+<body>
+    <form action="./upload.php" method="post" enctype="multipart/form-data">
+        <div id="dd_area" class="drop_area_off">
+            <div>
+                ここにファイルをドラッグ＆ドロップ
+                or
+                <input type="button" value="手動でファイル追加" onclick="clickUpload();" >
+            </div>
+
+            <input type="file" id="upload_files" name="upload_files[]">
+            <input type="file" id="tmp_files" name="tmp_files" multiple>
+        </div>
+
+        <div>アップロードしたファイル↓</div>
+        <table class="file_list">
+            <tbody id="upload_files_list" >
+            <!--実際の要素はJS側から挿入される-->
+            </tbody>
+        </table>    
+    </form>
+    <script src="./upload.js"></script>
+</body>
+
+</html>
