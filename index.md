@@ -56,7 +56,7 @@
   *  <a href="param_gen/index.html">Edge起動するショートカットのパラメータ指定くん</a>
   *  <a href="test/file_upload/upload.html">バニラJSでファイルアップロードするサンプル</a>  - <a href="https://gologius.hatenadiary.com/entry/2023/06/24/143816">ブログ記事</a>
   * <a href="./test_cache/top.html">CloudFront キャッシュ実験</a>
-  * <a href="./test/test_WYSIWYG/index.html">WYSIWYGエディタ 比較ページ</a>
+  * <a href="./test/test_WYSIWYG/index.html">WYSIWYGエディタ 比較ページ </a>
   
 # リンク
 <table>
