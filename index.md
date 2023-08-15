@@ -40,23 +40,30 @@
   * [デートコースメモ](/date/index.html)
 
 # その他実験
-  * ブラウザからEXEを呼び出す - [ブログ記事](https://gologius.hatenadiary.com/entry/2021/07/04/154148)
+  * ブラウザからEXEを呼び出す 
+	* [ブログ記事](https://gologius.hatenadiary.com/entry/2021/07/04/154148)
     * <a href="./test/blowser_to_call_exe/test1.html">メモ帳呼び出し1</a>
     * <a href="./test/blowser_to_call_exe/test2.html">アプリ呼び出し2</a>
   * Vue
-    * <a href="./test/PULLDOWN_SAMPLE/top.html">Vueで階層式プルダウンを作る</a> - [ブログ記事](https://gologius.hatenadiary.com/entry/2020/06/06/153138) 
-  * ページ遷移直後にアラートが表示されるページでSeleniumを使う - [ブログ記事](https://gologius.hatenadiary.com/entry/2018/05/14/225757)
+    * <a href="./test/PULLDOWN_SAMPLE/top.html">Vueで階層式プルダウンを作る</a> 
+	*[ブログ記事](https://gologius.hatenadiary.com/entry/2020/06/06/153138) 
+  * ページ遷移直後にアラートが表示されるページでSeleniumを使う 
+	* [ブログ記事](https://gologius.hatenadiary.com/entry/2018/05/14/225757)
     * <a href="javascript:void(0);" onclick="window.open('test/test_csvdl_alert.html', 'window', 'width=800, height=600') ">javascriptによる小ウインドウ表示 アラート表示あり</a>
     * <a href="javascript:void(0);" onclick="window.open('test/test_csvdl_noalert.html', 'window', 'width=800, height=600') ">javascriptによる小ウインドウ表示 アラート表示なし</a>
-  * フレームレイアウトサイトでSeleniumを使う - [ブログ記事](https://gologius.hatenadiary.com/entry/2018/03/10/230538)
+  * フレームレイアウトサイトでSeleniumを使う 
+	* [ブログ記事](https://gologius.hatenadiary.com/entry/2018/03/10/230538)
     * <a href="test/selenium_lecture_1.html">セレニウム自動テスト用 その１ 要素取得、操作</a>
     * <a href="test/selenium_lecture_2.html">セレニウム自動テスト用 その２ 別ウインドウ、アラート</a>
     * <a href="test/selenium_lecture_3.html">セレニウム自動テスト用 その３ フレームレイアウト</a>
-  *  <a href="test/test_brouser_suggest/login1.html">ブラウザの個人情報オートフィルへの対応</a>  - <a href="https://gologius.hatenadiary.com/entry/2022/05/14/130150">ブログ記事</a>
+  *  <a href="test/test_brouser_suggest/login1.html">ブラウザの個人情報オートフィルへの対応</a> 
+	* <a href="https://gologius.hatenadiary.com/entry/2022/05/14/130150">ブログ記事</a>
   *  <a href="param_gen/index.html">Edge起動するショートカットのパラメータ指定くん</a>
-  *  <a href="test/file_upload/upload.html">バニラJSでファイルアップロードするサンプル</a>  - <a href="https://gologius.hatenadiary.com/entry/2023/06/24/143816">ブログ記事</a>
-  * <a href="./test_cache/top.html">CloudFront キャッシュ実験</a>
+  *  <a href="test/file_upload/upload.html">バニラJSでファイルアップロードするサンプル</a>	
+	* <a href="https://gologius.hatenadiary.com/entry/2023/06/24/143816">ブログ記事</a>
+  * <a href="./test/test_cache/top.html">CloudFront キャッシュ実験</a>
   * <a href="./test/test_WYSIWYG/index.html">WYSIWYGエディタ 比較ページ </a>
+	* <a href="https://gologius.hatenadiary.com/entry/2023/08/14/100251">ブログ記事</a>
   
 # リンク
 <table>
