@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>キャッシュ実験ページ（URLパラメタ）</title>
+</head>
+
+<body>
+
+    <h1>キャッシュ実験ページ（URLパラメタ）</h1>
+    <a href="/test_cache/top.html">TOP</a>
+
+    <p>
+    <h2>説明</h2>
+    このページ（ディレクトリ）は<mark>意図的に入力した値をCDNにキャッシュするページ</mark>です。
+    <br>
+    CDNの実験のために作成しています。
+    <br>
+    本来はURLパラメタの内容を表示するページですが、
+    <br>
+    URLパラメタを考慮せずにCDNにキャッシュしているので、
+    <br>
+    入力内容とは異なる内容が返ります（＝第三者の入力内容が返却される）。
+    </p>
+
+    <p>
+        <a href="./urlparam.html">パラメタなしリンク</a>
+    </p>
+
+    <p>
+    <h2>パラメタ入力実験</h2>
+    <form method="get" action="./urlparam.html">
+        性別
+        <select name="param1">
+            <option value="" selected></option>
+            <option value="女">女</option>
+            <option value="男">男</option>
+            <option value="どちらでもない">どちらでもない</option>
+        </select>
+        誕生月
+        <select name="param2">
+            <option value="" selected></option>
+            <option value="1月">1月</option>
+            <option value="2月">2月</option>
+            <option value="3月">3月</option>
+            <option value="4月">4月</option>
+            <option value="5月">5月</option>
+            <option value="6月">6月</option>
+            <option value="7月">7月</option>
+            <option value="8月">8月</option>
+            <option value="9月">9月</option>
+            <option value="10月">10月</option>
+            <option value="11月">11月</option>
+            <option value="12月">12月</option>
+        </select>
+        <button type="submit">パラメタつきリンクへ移動する</button>
+    </form>
+    </p>
+
+    <p>
+    <h2>URLパラメタ解析結果</h2>
+    性別:<span id="param1"></span>
+    <br>
+    誕生月:<span id="param2"></span>
+    </p>
+
+    <script src="./urlparam.js"></script>
+</body>
+
+</html>

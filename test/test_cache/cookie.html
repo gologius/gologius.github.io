@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>キャッシュ実験ページ(クッキー)</title>
+</head>
+
+<body>
+
+    <h1>キャッシュ実験ページ(クッキー)</h1>
+    <a href="/test_cache/top.html">TOP</a>
+
+    <p>
+    <h2>説明</h2>
+    このページ（ディレクトリ）は<mark>意図的に入力した値をCDNにキャッシュするページ</mark>です。
+    <br>
+    CDNの実験のために作成しています。
+    <br>
+    本来は自分のクッキーの内容を表示する（＝自分の最終訪問履歴を表示する）ページですが、
+    <br>
+    クッキーを考慮せずにCDNにキャッシュしているので、
+    <br>
+    想定していない内容が見えます（＝第三者の履歴が返却される）。
+    </p>
+
+    <h2>操作</h2>
+    <p>
+        <button onclick="save_cookie();">クッキーを保存する（訪問履歴保存）</button>
+    </p>
+    <p>
+        <button onclick="delete_cookie();">クッキーをクリアする（訪問履歴削除）</button>
+    </p>
+
+    <p>
+        <a href="./cookie.html">更新</a>
+    </p>
+
+    <p>
+    <h2>クッキー解析結果</h2>
+    最終訪問日時：<span id="param1"></span>
+    </p>
+
+    <script src="./cookie.js"></script>
+</body>
+
+</html>
