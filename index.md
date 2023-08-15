@@ -1,15 +1,17 @@
 # 自己紹介
 
-- プログラミング(Python, C#)
+- プログラミング(Python, PHP, HTML ＋ CSS ＋ JS, C#)
+- AWS
+- セキュリティ周り
+- ゲーム制作 (Unity)
 - モデリング (Metasequoia)
 - モーション作成（Akeytsu）
-- ゲーム制作 (Unity)
 
 などをしています。
 
 経歴、資格、スキルなどは[スキル](skill.md)をご覧ください。
 
-# 製作物
+# 作ったもの
 
 - [クライアントツール](tool.md)
 - WEB ツール
@@ -37,18 +39,18 @@
   - [最初期の遺産](model_gallery_old.md)
   - [版権もの](model_gallery_copy.md)
   - [オリジナルデザイン](model_gallery_original.md)
-- 静的ページコンテンツ
+- その他
   - [いいなと思った名言メモ](meigen.md)
   - [デートコースメモ](/date/index.html)
 
-# その他実験
+# 実験系
 
 - ブラウザから EXE を呼び出す
   - [ブログ記事](https://gologius.hatenadiary.com/entry/2021/07/04/154148)
   - <a href="./test/blowser_to_call_exe/test1.html">メモ帳呼び出し 1</a>
   - <a href="./test/blowser_to_call_exe/test2.html">アプリ呼び出し 2</a>
-- Vue
-  - <a href="./test/PULLDOWN_SAMPLE/top.html">Vue で階層式プルダウンを作る</a> \*[ブログ記事](https://gologius.hatenadiary.com/entry/2020/06/06/153138)
+- <a href="./test/PULLDOWN_SAMPLE/top.html">Vue で階層式プルダウンを作る</a>
+  - [ブログ記事](https://gologius.hatenadiary.com/entry/2020/06/06/153138)
 - ページ遷移直後にアラートが表示されるページで Selenium を使う
   - [ブログ記事](https://gologius.hatenadiary.com/entry/2018/05/14/225757)
   - <a href="javascript:void(0);" onclick="window.open('test/test_csvdl_alert.html', 'window', 'width=800, height=600') ">javascript による小ウインドウ表示 アラート表示あり</a>
@@ -62,18 +64,18 @@
   - <a href="https://gologius.hatenadiary.com/entry/2022/05/14/130150">ブログ記事</a>
 - <a href="param_gen/index.html">Edge 起動するショートカットのパラメータ指定くん</a>
 - <a href="test/file_upload/upload.html">バニラ JS でファイルアップロードするサンプル</a>
-	- <a href="https://gologius.hatenadiary.com/entry/2023/06/24/143816">ブログ記事</a>
+  - <a href="https://gologius.hatenadiary.com/entry/2023/06/24/143816">ブログ記事</a>
 - <a href="./test/test_cache/top.html">CloudFront キャッシュ実験</a>
 - <a href="./test/test_WYSIWYG/index.html">WYSIWYG エディタ 比較ページ </a>
-	- <a href="https://gologius.hatenadiary.com/entry/2023/08/14/100251">ブログ記事</a>
+  - <a href="https://gologius.hatenadiary.com/entry/2023/08/14/100251">ブログ記事</a>
 
 # リンク
 
 <table>
   <tr>
-    <td>GitHub</td>
-    <td>gologius</td>
-    <td> <a href="https://github.com/gologius">https://github.com/gologius</a></td>
+    <td>ブログ</td>
+    <td>gologiusの巣</td>
+    <td> <a href="http://gologius.hatenadiary.com/">http://gologius.hatenadiary.com/</a></td>
   </tr>
   <tr>
     <td>Twitter</td>
@@ -81,9 +83,9 @@
     <td> <a href="https://twitter.com/gologius">https://twitter.com/gologius</a></td>
   </tr>
   <tr>
-    <td>ブログ</td>
-    <td>gologiusの巣</td>
-    <td> <a href="http://gologius.hatenadiary.com/">http://gologius.hatenadiary.com/</a></td>
+    <td>GitHub</td>
+    <td>gologius</td>
+    <td> <a href="https://github.com/gologius">https://github.com/gologius</a></td>
   </tr>
   <tr>
     <td>実験用WEBサーバー </td>
