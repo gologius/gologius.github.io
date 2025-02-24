@@ -1,0 +1,20 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 30px;
+
+    max-width: 960px;
+    margin: auto;
+}
+
+main textarea::placeholder {
+    color: red;
+}
+
+.arrow_img {
+    text-align: center;
+}
+.arrow_img img {
+    width: 50px;
+}

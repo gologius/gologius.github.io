@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Java⇔SQL変換</title>
+
+    <link href="../lib/bootstrap_5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/bootstrap_5.3.3/icons/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+	<script src="../lib/bootstrap_5.3.3/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-light">
+
+    <header class="row py-5 text-center">
+		<h2>Java⇔SQL変換</h2>
+		<p class="lead">古いJava開発補助。JavaScriptのみで動きます。サーバーにはデータ伝送されません。</p>
+	</header>
+
+	<main>
+		<div>
+			<label>Java変数名</label>
+			<div class="input-group mb-3">
+				<input type="text" id="java_var_name" class="form-control" onkeyup="update_java_var_name();">
+			</div>  
+		</div>
+		<div></div>
+		<div>		
+			<label>SQL</label>		
+			<div class="input-group">
+				<button class="btn btn-secondary" onclick="clear_src_sql_text();">クリア</button>
+				<textarea class="form-control" id="src_sql_text" rows="10" onkeyup="update_dst_java();" placeholder="select * from hogehoge;"></textarea>
+			</div>
+		</div>
+
+		<div>		
+			<label>Java</label>		
+			<div class="input-group">
+				<button class="btn btn-secondary" onclick="clear_src_java_text();">クリア</button>
+				<textarea class="form-control" id="src_java_text" rows="10" onkeyup="update_dst_sql();" placeholder='sb.append("select * from hogehoge;");'></textarea>
+			</div>
+		</div>
+
+		<div class="arrow_img">Javaへ変換<img src="./arrow.png"></div>
+		<div class="arrow_img">SQLへ変換<img src="./arrow.png"></div>
+
+		<div>
+			<label>Java</label>
+			<div class="input-group">
+				<button type="submit" class="btn btn-secondary" onclick="copy_dst_java_text();">コピー</button>
+				<textarea class="form-control" id="dst_java_text" rows="10" readonly placeholder='sb.append("select * from hogehoge;");'></textarea>
+			</div>
+		</div>
+		<div>
+			<label>SQL</label>
+			<div class="input-group">
+				<button type="submit" class="btn btn-secondary" onclick="copy_dst_sql_text();">コピー</button>
+				<textarea class="form-control" id="dst_sql_text" rows="10" readonly placeholder="select * from hogehoge;"></textarea>
+			</div>
+		</div>
+	</main>
+    
+	<footer class="row py-5 text-center">
+		<p><a href="https://gologius.github.io/">制作者:gologius</a></p>
+	</footer>
+
+	<script src="index.js"></script>
+</body>
+</html>
