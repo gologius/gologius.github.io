@@ -8,7 +8,17 @@ function get_src_json_text(){
 
 function get_selected_indent() {
     let e = document.querySelector("#indent");
-    return e.value;
+    console.log("ああああああ" + e.value);
+    if (e.value == "4") {
+        return "    "; //半角スペース4個
+    }
+    else if (e.value == "2"){
+        return "  "; //半角スペース2個
+    }
+    else if (e.value == "t") {
+        return "\t";
+    }
+    return "\t";
 }
 
 //=============================================================================
@@ -22,12 +32,15 @@ function convert_json(mode) {
     //変換開始
     let dst_text = "";
     let errmsg = "";
+    let indent = get_selected_indent();
     try {
-        if (src_text !== "") {
+        if (src_text == "") {
+        }
+        else {
             let obj = JSON.parse(src_text);
             
             if (mode == "indent") {
-                dst_text = JSON.stringify(obj, null,"\t");
+                dst_text = JSON.stringify(obj, null, indent);
             }
             else if (mode == "oneline") {
                 dst_text = JSON.stringify(obj);
