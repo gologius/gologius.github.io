@@ -16,8 +16,8 @@
 - [クライアントツール](tool.md)
 - WEB ツール
   - [行ったことがある都道府県チェックツール](/japan_map/index.html)
-  - [Java⇔SQL変換](java_sql_converter/index.html)
-  - [JSONフォーマッタ](json_formatter/index.html)
+  - [Java⇔SQL変換くん](java_sql_converter/index.html)
+  - [JSON整形くん](json_formatter/index.html)
 - [ゲーム](game.md)
   - [うるせぇエビフライぶつけんぞ](https://unityroom.com/games/uruse_ebi)
   - [過労死するまで働いて](https://unityroom.com/games/karoshi_hatarake)
