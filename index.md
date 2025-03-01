@@ -16,7 +16,7 @@
 - [クライアントツール](tool.md)
 - WEB ツール
   - [行ったことがある都道府県チェックツール](/japan_map/index.html)
-  - [Java⇔SQL変換](https://www.gologius.com/java_sql_converter/index.html)
+  - [Java⇔SQL変換](java_sql_converter/index.html)
   - [JSONフォーマッタ](json_formatter/index.html)
 - [ゲーム](game.md)
   - [うるせぇエビフライぶつけんぞ](https://unityroom.com/games/uruse_ebi)
