@@ -5,14 +5,28 @@ function init(){
 }
 
 function update_sql() {
-	
+
+	//テキスト取得
+	let tsv_text = document.querySelector("#src_text").value;	
+	tsv_text = tsv_text.split('\r').join('');  //改行コード置換
+	if (tsv_text === "") {
+		document.querySelector("#dst_text").value = "※TSV文字が空です";	
+		return;		
+	}
+
+	let table_name = document.querySelector("#table_name").value;
+	if (table_name === "") {
+		document.querySelector("#dst_text").value = "※テーブル名が空です";	
+		return;
+	}
+
 	let mode = document.querySelector("#mode").value;
 
 	if (mode === "INSERT") {
-		update_sql_insert();
+		update_sql_insert(table_name, tsv_text); //SQL作成
 	}
 	else if (mode === "UPDATE"){
-		update_sql_update();
+		update_sql_update(table_name, tsv_text); //SQL作成
 	}
 	else {
 		document.querySelector("#dst_text").value = "※モードが選択されていません";	
@@ -20,22 +34,14 @@ function update_sql() {
 	}
 }
 
-function update_sql_insert() {
+function update_sql_insert(table_name, tsv_text) {
 	
-
-	//テキスト取得→TSV形式で取得
-	let tsv_text = document.querySelector("#src_text").value;
-
-	//改行コード置換
-	tsv_text = tsv_text.split('\r').join(''); 
-
 	//分解
 	let rows = tsv_text.split('\n');
 
 	//SQL先頭作成
 	let sql1 = "";
-	let table_name = document.querySelector("#table_name").value;
-	sql1 += `INSERT INTO ${table_name} (`;
+	sql1 += `INSERT INTO ${table_name} ( `;
 
 	//header部解析
 	let headers = rows[0].split("\t");
@@ -43,12 +49,12 @@ function update_sql_insert() {
 		sql1 += `${headers[i]}`;
 		
 		if (i != headers.length-1) {
-			sql1 += ",";
+			sql1 += ", ";
 		}
 
     } //for  
 
-	sql1 += ") VALUES (";
+	sql1 += " ) VALUES ( ";
 
 	//body部解析 		
 	let sql2 = "";
@@ -57,7 +63,7 @@ function update_sql_insert() {
 		sql_tmp = "";
 
         let cols = rows[i].split("\t");
-		if (cols.length == 0 || cols.length == 1){
+		if (cols.length == 0){
             continue; //空行は無視
         }
 		
@@ -65,10 +71,10 @@ function update_sql_insert() {
 			sql_tmp += `'${cols[j]}'`;
 		
 			if (j != cols.length-1) {
-				sql_tmp += ",";
+				sql_tmp += ", ";
 			}
 		} 
-		sql_tmp += "); \n";
+		sql_tmp += " ); \n";
 		
 		sql2 += sql1 + sql_tmp;
 	} //for  
@@ -78,35 +84,36 @@ function update_sql_insert() {
 	document.querySelector("#dst_text").value = sql2;	
 }
 
-function update_sql_update() {
+function update_sql_update(table_name, tsv_text) {
 	
-	let mode = document.querySelector("#mode").value;
-
-	//テキスト取得→TSV形式で取得
-	let tsv_text = document.querySelector("#src_text").value;
-
-	//改行コード置換
-	tsv_text = tsv_text.split('\r').join(''); 
-
 	//分解
 	let rows = tsv_text.split('\n');
 
 	//SQL前半部の作成
 	let sql1 = "";
-	let table_name = document.querySelector("#table_name").value;
 	sql1 += `UPDATE ${table_name} SET `;		
 
 	//SQL後半部の作成
 	let headers = rows[0].split("\t");
 	let sql2 = "";
-	let col_where_from = document.querySelector("#col_where_from").value;
-	let col_where_to = document.querySelector("#col_where_to").value;
+	let col_where_from = 0;
+	let col_where_to = 0;
+
+	col_where_from = parseInt(document.querySelector("#col_where_from").value);
+	col_where_to = parseInt(document.querySelector("#col_where_to").value);
+	if (Number.isNaN(col_where_from) || Number.isNaN(col_where_to)) {
+		document.querySelector("#dst_text").value = "※列範囲が不正です";	
+		return; //ここで終了
+	}
+
+	console.log(col_where_from, col_where_to);
+
 	for (let i = 1; i < rows.length; i++) {
         
 		sql_tmp = "";
 
         let cols = rows[i].split("\t");
-		if (cols.length == 0 || cols.length == 1){
+		if (cols.length == 0){
             continue; //空行は無視
         }
 		
@@ -120,22 +127,18 @@ function update_sql_update() {
 			sql_tmp += `${headers[j]} = '${cols[j]}'`;
 		
 			if (j != cols.length-1) {
-				sql_tmp += ",";
+				sql_tmp += ", ";
 			}
 		} 
 
-		sql_tmp += "WHERE "
+		sql_tmp += " WHERE "
 
 		//where部作成
-		for (let j=0; j < cols.length; j++) {
-
-			if (!(j <= col_where_from && col_where_to <= j)) {
-				continue; //where文以外で利用する列のため無視
-			} 
+		for (let j=col_where_from; j <= col_where_to; j++) {
 
 			sql_tmp += `${headers[j]} = '${cols[j]}'`;
 		
-			if (j != cols.length-1) {
+			if (j != col_where_to) {
 				sql_tmp += " AND ";
 			}
 		} 
@@ -155,7 +158,7 @@ function clear_src() {
     document.querySelector("#mode").value = "";
     document.querySelector("#table_name").value = "";
     document.querySelector("#src_text").value = "";
-    update();
+    update_sql();
 }
 
 function update_mode(){

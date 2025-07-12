@@ -45,12 +45,12 @@
 		</div>
 
 		<div class="row mb-3" id="row_update">
-			<div class="col-lg-4">
-				<label>WHERE文として使う列範囲</label>				
+			<div class="col-lg-6">
+				<label>WHERE文として使う列範囲(0開始)</label>				
 				<div class="input-group">
-					<input type="text" class="form-control" id="col_where_from" onkeyup="update_sql();">
+					<input type="text" class="form-control" id="col_where_from" onkeyup="update_sql();" value="0">
 					<span class="input-group-text">~</span>
-					<input type="text" class="form-control" id="col_where_to" onkeyup="update_sql();">		
+					<input type="text" class="form-control" id="col_where_to" onkeyup="update_sql();" value="0">		
 				</div>
 			</div>
 		</div>
