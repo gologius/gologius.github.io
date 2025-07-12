@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>INSERT・UPDATE SQL作成くん</title>
+
+    <link href="/lib/bootstrap_5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/lib/bootstrap_5.3.3/icons/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script src="/lib/bootstrap_5.3.3/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body class="bg-light container">
+
+    <div class="row py-5 text-center">
+		<h2>INSERT・UPDATE SQL作成くん</h2>
+		<p class="lead">Excelの表をコピペすると、TSV形式のテキストとして解析して、SQLを作成してくれます</p>
+	</div>
+
+	<main>
+
+		<div class="row mb-3">
+			<div class="col-lg-auto">
+				  <button type="submit" class="btn btn-primary" onclick="clear_src();">クリア</button>
+			</div>
+
+		</div>
+
+		<div class="row mb-3">
+			<div class="col-lg-6">
+				<label>テーブル名</label>
+				<div class="input-group">
+					<input type="text" class="form-control" id="table_name" onkeyup="update_sql();">		
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<label>モード</label>
+				<select class="form-select" id="mode" onchange="update_mode();">
+					<option value="">※未選択</option>
+					<option value="INSERT">INSERT</option>
+					<option value="UPDATE">UPDATE</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="row mb-3" id="row_update">
+			<div class="col-lg-4">
+				<label>WHERE文として使う列範囲</label>				
+				<div class="input-group">
+					<input type="text" class="form-control" id="col_where_from" onkeyup="update_sql();">
+					<span class="input-group-text">~</span>
+					<input type="text" class="form-control" id="col_where_to" onkeyup="update_sql();">		
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row mb-3">
+			<div class="col-lg-12">
+				<label>TSV文字</label>				
+				<div class="input-group">
+					<textarea class="form-control" id="src_text" rows="10" onkeyup="update_sql();"></textarea>
+				</div>
+			</div>
+		</div>
+
+		<hr class="my-4">
+		
+		<div class="row mb-3">
+			<div class="col-lg-12">
+				<label>生成結果</label>
+				<div class="input-group">
+					<button type="submit" class="btn btn-secondary" onclick="copy_sql();">コピー</button>
+					<textarea class="form-control" id="dst_text" rows="10" readonly></textarea>
+				</div>
+			</div>
+		</div>
+	</main>
+    
+	<!--Toast-->
+	<div class="toast-container position-fixed top-0 end-0 p-3">
+	  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="false">
+		<div class="toast-header text-bg-primary">
+		  <strong class="me-auto"></strong>
+		  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+		</div>
+		<div class="toast-body bg-white" ></div>
+	  </div>
+	</div>
+	
+	<footer class="row py-5 text-center">
+		<p><mark>生成されたSQLを実行したことによる責任は、本サイトでは一切負いません</mark></p>
+		<p><a href="https://gologius.github.io/">制作者:gologius</a></p>
+	</footer>
+
+	<script src="index.js?20240702"></script>
+</body>
+</html>
