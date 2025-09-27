@@ -20,23 +20,24 @@
 
 	<main>
 
+		<h2>ヘッダー読み込み</h2>
+
 		<div class="row mb-3">
 			<div class="col-lg-auto">
 				  <button type="submit" class="btn btn-primary" onclick="clear_src();">クリア</button>
 			</div>
-
 		</div>
 
 		<div class="row mb-3">
 			<div class="col-lg-6">
 				<label>テーブル名</label>
 				<div class="input-group">
-					<input type="text" class="form-control" id="table_name" onkeyup="update_sql();">		
+					<input type="text" class="form-control" id="table_name" >		
 				</div>
 			</div>
 			<div class="col-lg-6">
 				<label>モード</label>
-				<select class="form-select" id="mode" onchange="update_mode();">
+				<select class="form-select" id="mode">
 					<option value="">※未選択</option>
 					<option value="INSERT">INSERT</option>
 					<option value="UPDATE">UPDATE</option>
@@ -44,32 +45,38 @@
 			</div>
 		</div>
 
-		<div class="row mb-3" id="row_update">
-			<div class="col-lg-6">
-				<label>WHERE文として使う列範囲(0開始)</label>				
-				<div class="input-group">
-					<input type="text" class="form-control" id="col_where_from" onkeyup="update_sql();" value="0">
-					<span class="input-group-text">~</span>
-					<input type="text" class="form-control" id="col_where_to" onkeyup="update_sql();" value="0">		
-				</div>
-			</div>
-		</div>
-
-
 		<div class="row mb-3">
 			<div class="col-lg-12">
 				<label>TSV文字</label>				
 				<div class="input-group">
-					<textarea class="form-control" id="src_text" rows="10" onkeyup="update_sql();"></textarea>
+					<textarea class="form-control" id="src_text" rows="10" ></textarea>
 				</div>
+			</div>
+		</div>
+
+		<div class="row mb-3">
+			<div class="col-lg-auto">
+				<button type="button" class="btn btn-primary" onclick="read_header();">(1)ヘッダー読み込み</button>
+				<button type="button" class="btn btn-primary" onclick="make_sql();">(2)SQL生成</button>
 			</div>
 		</div>
 
 		<hr class="my-4">
 		
+		<h2>ヘッダー読み込み結果</h2>
+
+		<div class="row mb-3">
+			<div class="col-lg-12 table-responsive">
+				<table id="header_sample" class="table text-nowrap">
+					<!--JS側からセット-->
+				</table>
+			</div>
+		</div>
+
+		<h2>SQL生成結果</h2>
+
 		<div class="row mb-3">
 			<div class="col-lg-12">
-				<label>生成結果</label>
 				<div class="input-group">
 					<button type="submit" class="btn btn-secondary" onclick="copy_sql();">コピー</button>
 					<textarea class="form-control" id="dst_text" rows="10" readonly></textarea>
