@@ -81,6 +81,18 @@ function read_header() {
 	html += `</tr>`;
 
 
+	html += `<tr>`;
+	html += `<th>(Where文)空文字をIS NULLに置換する</th>`;
+
+	//IS NULL 行の追加
+	for (let i = 0; i < headers.length; i++) { 
+		
+		html += `<td><input type="checkbox" id="usenull_${i}" value="1"></td>`;
+    } //for  
+
+	html += `</tr>`;
+
+
 	//html反映
 	let elem = document.querySelector("#header_sample");
 	elem.innerHTML = ""; //初期化
@@ -155,6 +167,8 @@ function update_sql_insert(table_name, tsv_text) {
 			else {
 				sql_tmp += `'${cols[j]}'`;
 			}
+
+			
 		
 			if (j != cols.length-1) {
 				sql_tmp += ", ";
@@ -236,13 +250,20 @@ function update_sql_update(table_name, tsv_text) {
 				sql_tmp += " AND ";
 			}
 
-			//設定に応じてクォート囲みするか判断
-			if (get_col_setting("#nonquot_"+j)===true) {
-				sql_tmp += `${headers[j]} = ${cols[j]}`;
+			//空文字を IS NULL に置換するか判定
+			if (get_col_setting("#usenull_"+j)===true && cols[j]==="") {
+				//空文字を IS NULL に置換する
+				sql_tmp += `${headers[j]} IS NULL`;
 			}
 			else {
-				sql_tmp += `${headers[j]} = '${cols[j]}'`;	
-			}		
+				//空文字を IS NULL に置換しない場合は、 設定に応じてクォート囲みするか判断
+				if (get_col_setting("#nonquot_"+j)===true) {
+					sql_tmp += `${headers[j]} = ${cols[j]}`;
+				}
+				else {
+					sql_tmp += `${headers[j]} = '${cols[j]}'`;	
+				}		
+			}
 		} 
 
 
